@@ -1,0 +1,37 @@
+body {
+	padding-top: 100px;
+	margin: 0;
+}
+
+#Post{
+	position: relative;
+	top: 170px;
+	left: -500px;
+}
+
+
+#name_post{
+	width: 400px;
+	height: 20px;
+}
+
+
+#text_post{
+	width: 400px;
+	height: 90px;
+}
+
+
+section_t {
+	width: 500px;
+	float: left;
+	border-radius: 5px;
+	background-color: LightSteelBlue;
+}
+
+section_posts {
+	width: 500px;
+	float: left;
+	border-radius: 5px;
+	background-color: white;
+}
