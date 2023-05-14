@@ -1,17 +1,17 @@
 <?php
+	$host = 'localhost';
+	$user = 'root';
+	$pass = '';
 	$db_host = 'localhost';
 	$db_user = 'root';
 	$db_pass = '';
 	$db_name = 'test';
-	$db = mysqli_connect($db_host, $db_user, "", $db_name) or die ("Íåâîçìîæíî ïîäêëþ÷èòüñÿ ê ÁÄ");
+	$db = mysqli_connect($db_host, $db_user, "", $db_name) or die ("ÃÃ¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã® Ã¯Ã®Ã¤ÃªÃ«Ã¾Ã·Ã¨Ã²Ã¼Ã±Ã¿ Ãª ÃÃ„");
 	mysqli_query($db, 'set character_set_results = "utf8"');
+	$link = mysqli_connect($host, $user, $pass, $db_name);
 
-	//$link = mysqli_connect($host, $user, $pass, $db_name);
-
-
-/*
     	if (!$link) {
-		echo ('Íåâîçìîæíî ïîäêëþ÷èòüñÿ ê ÁÄ');
+		echo ('ÃÃ¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã® Ã¯Ã®Ã¤ÃªÃ«Ã¾Ã·Ã¨Ã²Ã¼Ã±Ã¿ Ãª ÃÃ„');
       		exit;
     	}
 
@@ -31,5 +31,4 @@
       		$sql = mysqli_query($link, "SELECT `ID`, `Name_P`, `Text_P` FROM `posts` WHERE `ID`={$_GET['red']}");
       		$product = mysqli_fetch_array($sql);
     	}
-*/
 ?>
