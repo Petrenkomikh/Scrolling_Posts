@@ -3,13 +3,6 @@ body {
 	margin: 0;
 }
 
-#Post{
-	position: relative;
-	top: 170px;
-	left: -500px;
-}
-
-
 #name_post{
 	width: 400px;
 	height: 20px;
