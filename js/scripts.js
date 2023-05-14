@@ -5,7 +5,7 @@ var startFrom = 10;
 
     $(window).scroll(function() {
 
-        if($(window).scrollTop() + $(window).height() >= $(document).height() - 200 && !inProgress) {
+        if($(window).scrollTop() + $(window).height() >= $(document).height() && !inProgress) {
 
         $.ajax({
             url: 'scrolling.php',
@@ -21,7 +21,7 @@ var startFrom = 10;
 
             $.each(data, function(index, data){
 
-            $("#posts").append("<p><b>" + data.Name_P + "</b><br />" + data.Text_P + "</p>");
+            $("#maspost").append("<p><b>" + data.Name_P + "</b><br /><p>" + data.Text_P + "<br /></p>");
             });
 
             inProgress = false;
