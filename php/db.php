@@ -16,6 +16,7 @@
     	}
 
     	if (isset($_POST["Name_P"])) {
+			//ungetc
       		if (isset($_GET['red'])) {
         		$sql = mysqli_query($link, "UPDATE `posts` SET `Name_P` = '{$_POST['Name_P']}',`Text_P` = '{$_POST['Text_P']}' WHERE `ID`={$_GET['red']}");
       		} else {
